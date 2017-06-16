@@ -1,6 +1,6 @@
 ;;;; My init.el
 ;;;; Mappings
-;;; Synonim for delete key. To see help, use <F1> instead.
+;;; Synonym for delete key. To see help, use <F1> instead.
 (global-set-key (kbd "C-h") 'backward-delete-char-untabify)
 
 
