@@ -29,7 +29,7 @@
     ;; Register Merlin
     (add-to-list 'load-path (expand-file-name "emacs/site-lisp" opam-share))
     (autoload 'merlin-mode "merlin" nil t nil)
-    (autoload 'tuareg-mode "tuareg-site-file" nil t nil)
+    (load-library "tuareg-site-file")
     ;; Automatically start it in OCaml buffers
     (add-hook 'tuareg-mode-hook 'merlin-mode t)
     (add-hook 'caml-mode-hook 'merlin-mode t)
