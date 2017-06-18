@@ -16,6 +16,18 @@
 ;;; Alternative for the original action of C-q.
 (global-set-key (kbd "C-x M-q") 'quoted-insert)
 
+;;; Load init file quickly.
+(defun load-current-file ()
+  (interactive)
+  (load-file (buffer-file-name)))
+
+(defun load-init-file ()
+  (interactive)
+  (load-file user-init-file))
+
+(global-set-key (kbd "C-x RET RET") 'load-current-file)
+(global-set-key (kbd "C-x RET .") 'load-init-file)
+
 
 
 
