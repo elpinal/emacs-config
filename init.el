@@ -8,6 +8,8 @@
 ;;; In my environment, suspension with C-z does not work (it's intentionally) and I don't use it.
 ;;; If C-z were to fail, use <F1>.
 (global-set-key (kbd "C-z") help-map)
+;;; Alternative for M-h.
+(global-set-key (kbd "C-x M-h") 'mark-paragraph)
 
 ;;; Alternative for C-a.
 ;;; C-a is used for a prefix key of GNU Screen.
