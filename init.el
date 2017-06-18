@@ -36,8 +36,11 @@
 (package-initialize)
 (package-refresh-contents)
 
-(defvar packages-to-install
+(add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/") t)
+
+(defconst packages-to-install
   '(
+    clojure-mode
     sml-mode
     ))
 
