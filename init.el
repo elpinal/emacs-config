@@ -13,6 +13,9 @@
 ;;; C-a is used for a prefix key of GNU Screen.
 (global-set-key (kbd "C-q") 'move-beginning-of-line)
 
+;;; Alternative for the original action of C-q.
+(global-set-key (kbd "C-x M-q") 'quoted-insert)
+
 
 
 
