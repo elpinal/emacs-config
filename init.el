@@ -41,7 +41,9 @@
 
 (defconst packages-to-install
   '(
+    cider
     clojure-mode
+    smartparens
     sml-mode
     ))
 
@@ -52,6 +54,11 @@
 
 
 ;;;; Filetypes
+;;; Clojure
+(require 'smartparens-config)
+(add-hook 'clojure-mode-hook #'smartparens-strict-mode)
+
+
 ;;; OCaml
 (let ((opam-share (ignore-errors (car (process-lines "opam" "config" "var" "share")))))
   (when (and opam-share (file-directory-p opam-share))
