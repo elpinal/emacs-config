@@ -2,6 +2,8 @@
 ;;;; Mappings
 ;;; Synonym for delete key. To see help, use <F1> instead.
 (global-set-key (kbd "C-h") 'backward-delete-char-untabify)
+;;; For consistency with C-h.
+(global-set-key (kbd "M-h") 'backward-kill-word)
 
 
 
