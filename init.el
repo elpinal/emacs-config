@@ -9,6 +9,10 @@
 ;;; If C-z were to fail, use <F1>.
 (global-set-key (kbd "C-z") help-map)
 
+;;; Alternative for C-a.
+;;; C-a is used for a prefix key of GNU Screen.
+(global-set-key (kbd "C-q") 'move-beginning-of-line)
+
 
 
 
