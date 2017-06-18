@@ -1,9 +1,13 @@
 ;;;; My init.el
 ;;;; Mappings
-;;; Synonym for delete key. To see help, use <F1> instead.
+;;; Synonym for delete key.
 (global-set-key (kbd "C-h") 'backward-delete-char-untabify)
 ;;; For consistency with C-h.
 (global-set-key (kbd "M-h") 'backward-kill-word)
+;;; Alternative for the original action of C-h (help).
+;;; In my environment, suspension with C-z does not work (it's intentionally) and I don't use it.
+;;; If C-z were to fail, use <F1>.
+(global-set-key (kbd "C-z") help-map)
 
 
 
