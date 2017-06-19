@@ -32,8 +32,8 @@
 
 # .SUBDIRS:
 
-install: init.el
+install: init.el monotone-theme.el
 	mkdir -p $(HOME)/.eces/monotone
-	cp $< $(HOME)/.eces/monotone/
+	cp $^ $(HOME)/.eces/monotone/
 
 .DEFAULT: install
