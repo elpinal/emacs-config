@@ -45,6 +45,8 @@
   '(
     cider
     clojure-mode
+    ghc
+    haskell-mode
     smartparens
     sml-mode
     ))
@@ -59,6 +61,10 @@
 ;;; Clojure
 (require 'smartparens-config)
 (add-hook 'clojure-mode-hook #'smartparens-strict-mode)
+
+
+;;; Haskell
+(add-hook 'haskell-mode-hook (lambda () (ghc-init)))
 
 
 ;;; OCaml
