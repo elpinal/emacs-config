@@ -49,7 +49,7 @@
 (add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/") t)
 
 (package-initialize)
-(package-refresh-contents)
+;(package-refresh-contents)
 
 (defconst packages-to-install
   '(
