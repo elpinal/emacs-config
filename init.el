@@ -65,6 +65,11 @@
   (unless (package-installed-p package)
     (package-install package)))
 
+;;; Smartparens
+
+(smartparens-global-mode t)
+
+
 
 
 ;;;; Filetypes
