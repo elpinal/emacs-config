@@ -1,5 +1,7 @@
 ;;;; My init.el
 ;;;; Basic
+;;; Show "East Asian Ambiguous Width" as single width.
+(set-language-environment "English")
 ;;; For package compatibility.
 (custom-set-variables '(shell-file-name "/bin/sh"))
 
