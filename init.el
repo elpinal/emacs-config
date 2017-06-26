@@ -1,4 +1,11 @@
 ;;;; My init.el
+;;;; Basic
+;;; For package compatibility.
+(custom-set-variables '(shell-file-name "/bin/sh"))
+
+
+
+
 ;;;; Mappings
 ;;; Synonym for delete key.
 (global-set-key (kbd "C-h") 'backward-delete-char-untabify)
