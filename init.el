@@ -55,6 +55,7 @@
   '(
     cider
     clojure-mode
+    flycheck
     ghc
     go-mode
     haskell-mode
@@ -65,6 +66,9 @@
 (dolist (package packages-to-install)
   (unless (package-installed-p package)
     (package-install package)))
+
+;;; Flycheck
+(add-hook 'after-init-hook #'global-flycheck-mode)
 
 ;;; Smartparens
 
