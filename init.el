@@ -81,8 +81,8 @@
 ;; For consistency with C-h.
 (global-set-key (kbd "M-h") 'backward-kill-word)
 
-;; Alternative for the original action of C-h (help).
-;; In my environment, suspension with C-z does not work (it's intentionally) and I don't use it.
+;; Alternative for the original action of C-h (help).  In my environment,
+;; suspension with C-z does not work (it's intentionally) and I don't use it.
 ;; If C-z were to fail, use <F1>.
 (global-set-key (kbd "C-z") help-map)
 
