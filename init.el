@@ -6,7 +6,8 @@
 (custom-set-variables '(shell-file-name "/bin/sh"))
 ;;; Disable menu bar.
 (menu-bar-mode 0)
-
+;;; Show column number.
+(column-number-mode t)
 
 
 ;;;; Mappings
