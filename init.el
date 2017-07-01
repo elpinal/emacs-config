@@ -92,10 +92,12 @@
 
 ;;; Load init file quickly.
 (defun load-current-file ()
+  "Load current file."
   (interactive)
   (load-file (buffer-file-name)))
 
 (defun load-init-file ()
+  "Load user init file."
   (interactive)
   (load-file user-init-file))
 
