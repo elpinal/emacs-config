@@ -59,6 +59,7 @@
     ghc
     go-mode
     haskell-mode
+    magit
     smartparens
     sml-mode
     ))
