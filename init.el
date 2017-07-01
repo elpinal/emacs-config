@@ -56,6 +56,7 @@
     cider
     clojure-mode
     ghc
+    go-mode
     haskell-mode
     smartparens
     sml-mode
@@ -76,6 +77,11 @@
 ;;; Clojure
 (require 'smartparens-config)
 (add-hook 'clojure-mode-hook #'smartparens-strict-mode)
+
+
+;;; Go
+(add-hook 'before-save-hook 'gofmt-before-save)
+(custom-set-variables '(gofmt-command "goimports"))
 
 
 ;;; Haskell
