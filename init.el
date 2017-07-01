@@ -118,6 +118,7 @@
 
 
 ;;;; Packages
+;;; Package installation
 
 (require 'package)
 
@@ -146,13 +147,24 @@
     (package-install package)))
 
 
+
+
 ;;; Auto-Complete
+
 (ac-config-default)
 
+
+
+
 ;;; Flycheck
+
 (add-hook 'after-init-hook #'global-flycheck-mode)
 
+
+
+
 ;;; Smartparens
+
 (smartparens-global-mode t)
 
 
@@ -169,6 +181,8 @@
 (add-hook 'clojure-mode-hook #'smartparens-strict-mode)
 
 
+
+
 ;;; Go
 
 (add-hook 'before-save-hook 'gofmt-before-save)
@@ -176,8 +190,12 @@
 (require 'go-autocomplete)
 
 
+
+
 ;;; Haskell
 (add-hook 'haskell-mode-hook (lambda () (ghc-init)))
+
+
 
 
 ;;; OCaml
