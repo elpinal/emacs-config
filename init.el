@@ -53,10 +53,12 @@
 
 (defconst packages-to-install
   '(
+    auto-complete
     cider
     clojure-mode
     flycheck
     ghc
+    go-autocomplete
     go-mode
     haskell-mode
     magit
@@ -67,6 +69,9 @@
 (dolist (package packages-to-install)
   (unless (package-installed-p package)
     (package-install package)))
+
+;;; Auto-Complete
+(ac-config-default)
 
 ;;; Flycheck
 (add-hook 'after-init-hook #'global-flycheck-mode)
@@ -87,6 +92,7 @@
 ;;; Go
 (add-hook 'before-save-hook 'gofmt-before-save)
 (custom-set-variables '(gofmt-command "goimports"))
+(require 'go-autocomplete)
 
 
 ;;; Haskell
