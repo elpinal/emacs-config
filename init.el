@@ -1,5 +1,59 @@
-;;;; My init.el
+;;; init.el --- My init.el
+
+;; Copyright (C) 2017 El Pin Al
+
+;;; Commentary:
+
+;; The following rules are originally derived from
+;; Kana's vimrc <https://github.com/kana/config>.
+;;
+;;
+;; * This file consists of "sections".
+;;
+;;   - The name each section should be single word.
+;;
+;; * Each section consists of zero or more "subsections".
+;;
+;;   - There is no rule for the name of each subsection.
+;;
+;; * The last subsection in a section should be named as "Misc.".
+;;
+;; * Whenever new subsection is inserted,
+;;   it should be inserted just before "Misc." subsection.
+;;
+;; * If a setting can be categorized into two or more sections,
+;;   it should be put into the most bottom section in this file.
+;;
+;;   For example, key mappings for a specific plugin should be put into the
+;;   "Plugins" section.
+;;
+;;
+;; Coding Rule
+;;
+;; * Separate sections with 8 blank lines.
+;;
+;; * Separate subsections with 4 blank lines.
+;;
+;; * Character Encoding: Use UTF-8 for this file and other files such as
+;;   plugins.
+;;
+;; * Line length Limit:
+;;
+;;   - Non-Comment: There are no line length limit.  If a line feels too long,
+;;     wrap it and indent with an extra spaces.
+;;
+;;   - Comment: Limit all lines to a maximum of 79 characters.
+
+
+
+
+
+
+
+;;; Code:
+
 ;;;; Basic
+
 ;;; Show "East Asian Ambiguous Width" as single width.
 (set-language-environment "English")
 ;;; For package compatibility.
@@ -10,7 +64,14 @@
 (column-number-mode t)
 
 
+
+
+
+
+
+
 ;;;; Mappings
+
 ;;; Synonym for delete key.
 (global-set-key (kbd "C-h") 'backward-delete-char-untabify)
 ;;; For consistency with C-h.
@@ -40,6 +101,10 @@
 
 (global-set-key (kbd "C-x RET RET") 'load-current-file)
 (global-set-key (kbd "C-x RET .") 'load-init-file)
+
+
+
+
 
 
 
@@ -84,6 +149,10 @@
 
 
 
+
+
+
+
 ;;;; Filetypes
 ;;; Clojure
 (require 'smartparens-config)
@@ -116,6 +185,19 @@
 
 
 
+
+
+
+
 ;;;; Color Theme
 (load-theme 'monotone t)
 (enable-theme 'monotone)
+
+
+
+
+
+
+
+
+;;; init.el ends here
