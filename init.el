@@ -140,8 +140,10 @@
     go-autocomplete
     go-mode
     haskell-mode
+    hindent
     magit
     markdown-mode
+    shm
     smartparens
     sml-mode
     ))
@@ -197,7 +199,25 @@
 
 
 ;;; Haskell
-(add-hook 'haskell-mode-hook (lambda () (ghc-init)))
+
+(require 'haskell-interactive-mode)
+(require 'haskell-process)
+
+(add-to-list 'load-path "~/.stack/snapshots/x86_64-osx/lts-4.0/7.10.3/share/x86_64-osx-ghc-7.10.3/HaRe-0.8.2.1/elisp")
+(require 'hare)
+(autoload 'hare-init "hare" nil t)
+
+(add-hook 'haskell-mode-hook 'interactive-haskell-mode)
+(add-hook 'haskell-mode-hook (lambda () (ghc-init) (hare-init)))
+(add-hook 'haskell-mode-hook #'hindent-mode)
+(add-hook 'haskell-mode-hook 'haskell-decl-scan-mode)
+
+(custom-set-variables '(haskell-tags-on-save t)
+		      '(haskell-process-suggest-remove-import-lines t)
+		      '(haskell-process-auto-import-loaded-modules t)
+		      '(haskell-process-log t)
+		      '(haskell-process-type 'stack-ghci)
+		      '(haskell-compile-cabal-build-command "stack build"))
 
 
 
