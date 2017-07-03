@@ -141,6 +141,7 @@
     go-mode
     haskell-mode
     magit
+    markdown-mode
     smartparens
     sml-mode
     ))
