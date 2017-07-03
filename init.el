@@ -110,6 +110,9 @@
 (global-set-key (kbd "C-x RET RET") 'load-current-file)
 (global-set-key (kbd "C-x RET .") 'load-init-file)
 
+;; Open init file quickly.
+(global-set-key (kbd "C-x ,") (lambda () (interactive) (find-file "~/src/github.com/elpinal/emacs-config/init.el")))
+
 
 
 
