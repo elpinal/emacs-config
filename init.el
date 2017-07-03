@@ -135,6 +135,7 @@
 
 (defconst packages-to-install
   '(
+    auctex
     auto-complete
     cider
     clojure-mode
