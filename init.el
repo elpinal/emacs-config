@@ -173,6 +173,32 @@
 
 (smartparens-global-mode t)
 
+;; Alternative for the original action of "C-x -"
+(global-set-key (kbd "C-x M--") 'shrink-window-if-larger-than-buffer)
+
+(define-key smartparens-mode-map (kbd "C-x - u") 'sp-unwrap-sexp)
+(define-key smartparens-mode-map (kbd "C-x - b u") 'sp-backward-unwrap-sexp)
+(define-key smartparens-mode-map (kbd "C-x - f s") 'sp-forward-slurp-sexp)
+(define-key smartparens-mode-map (kbd "C-x - b s") 'sp-backward-slurp-sexp)
+(define-key smartparens-mode-map (kbd "C-x - d") 'sp-kill-sexp)
+(define-key smartparens-mode-map (kbd "C-x - b d") 'sp-backward-kill-sexp)
+(define-key smartparens-mode-map (kbd "C-x - y") 'sp-copy-sexp)
+(define-key smartparens-mode-map (kbd "C-x - b y") 'sp-backward-copy-sexp)
+(define-key smartparens-mode-map (kbd "C-x - t") 'sp-transpose-sexp)
+(define-key smartparens-mode-map (kbd "C-x - U") 'sp-splice-sexp)
+(define-key smartparens-mode-map (kbd "C-x - o") 'sp-splice-sexp-killing-around)
+(define-key smartparens-mode-map (kbd "C-x - |") 'sp-split-sexp)
+(define-key smartparens-mode-map (kbd "C-x - j") 'sp-join-sexp)
+(define-key smartparens-mode-map (kbd "C-x - c") 'sp-rewrap-sexp)
+(define-key smartparens-mode-map (kbd "C-x - ~") 'sp-swap-enclosing-sexp)
+(define-key smartparens-mode-map (kbd "C-x - e") 'sp-forward-barf-sexp)
+(define-key smartparens-mode-map (kbd "C-x - b e") 'sp-backward-barf-sexp)
+(define-key smartparens-mode-map (kbd "C-x - v") 'sp-select-next-thing)
+(define-key smartparens-mode-map (kbd "C-x - b v") 'sp-select-previous-thing)
+
+(define-key smartparens-mode-map (kbd "C-x - s") 'sp-slurp-hybrid-sexp)
+(define-key smartparens-mode-map (kbd "C-x - k") 'sp-kill-hybrid-sexp)
+
 
 
 
