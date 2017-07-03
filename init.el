@@ -113,6 +113,8 @@
 ;; Open init file quickly.
 (global-set-key (kbd "C-x ,") (lambda () (interactive) (find-file "~/src/github.com/elpinal/emacs-config/init.el")))
 
+;; Launch Eshell in another window.
+(global-set-key (kbd "C-x !") 'eshell)
 
 
 
