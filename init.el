@@ -74,6 +74,17 @@
 
 
 ;;;; Mappings
+;;; Windows
+
+(global-set-key (kbd "<left>") 'windmove-left)
+(global-set-key (kbd "<down>") 'windmove-down)
+(global-set-key (kbd "<up>") 'windmove-up)
+(global-set-key (kbd "<right>") 'windmove-right)
+
+
+
+
+;;; Misc.
 
 ;; Synonym for delete key.
 (global-set-key (kbd "C-h") 'backward-delete-char-untabify)
