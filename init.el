@@ -153,6 +153,10 @@
 (global-set-key (kbd "C-x >") 'enlarge-window-horizontally)
 (global-set-key (kbd "C-x <") 'shrink-window-horizontally)
 
+;; Scroll by the half of window height.
+(global-set-key (kbd "C-v") (lambda (n) (interactive "p") (scroll-up (* n (max 1 (/ (window-body-height) 2))))))
+(global-set-key (kbd "M-v") (lambda (n) (interactive "p") (scroll-down (* n (max 1 (/ (window-body-height) 2))))))
+
 
 
 
