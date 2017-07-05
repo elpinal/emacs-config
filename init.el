@@ -141,6 +141,18 @@
 ;; Launch Eshell in another window.
 (global-set-key (kbd "C-x !") 'eshell)
 
+(global-set-key (kbd "M-e") (lambda (n) (interactive "p") (scroll-up n)))
+(global-set-key (kbd "M-y") (lambda (n) (interactive "p") (scroll-down n)))
+
+;; Alternatives for M-e / M-y.
+(global-set-key (kbd "C-x }") 'forward-sentence)
+(global-set-key (kbd "C-x C-y") 'yank-pop)
+
+;; Alternatives for C-x } / C-x {.
+;; -- the default action of C-x > / C-x < is almost never used.
+(global-set-key (kbd "C-x >") 'enlarge-window-horizontally)
+(global-set-key (kbd "C-x <") 'shrink-window-horizontally)
+
 
 
 
