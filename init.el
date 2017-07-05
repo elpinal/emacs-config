@@ -81,6 +81,20 @@
 (global-set-key (kbd "<up>") 'windmove-up)
 (global-set-key (kbd "<right>") 'windmove-right)
 
+;; Synonim for 'C-x 0'.
+(global-set-key (kbd "M-c") 'delete-window)
+
+
+
+;;; Editing
+
+;; To reserve M-l / M-u / M-c for other use.
+;; Like Vim's gu / gU.
+(global-set-key (kbd "C-x g u") 'downcase-word)
+(global-set-key (kbd "C-x g U") 'upcase-word)
+;; "t" stands for "t"itlecase.
+(global-set-key (kbd "C-x g t") 'capitalize-word)
+
 
 
 
