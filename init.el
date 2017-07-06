@@ -159,6 +159,10 @@
 
 (global-set-key (kbd "M-l") 'move-to-window-line-top-bottom)
 
+;; Swap M-z and C-x z.
+(global-set-key (kbd "M-z") 'repeat)
+(global-set-key (kbd "C-x z") 'zap-to-char)
+
 
 
 
