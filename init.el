@@ -136,13 +136,19 @@
 (global-set-key (kbd "C-x RET .") 'load-init-file)
 
 ;; Open init file quickly.
-(global-set-key (kbd "C-x ,") (lambda () (interactive) (find-file "~/src/github.com/elpinal/emacs-config/init.el")))
+(global-set-key (kbd "C-x ,") (lambda ()
+				"Open init file."
+				(interactive) (find-file "~/src/github.com/elpinal/emacs-config/init.el")))
 
 ;; Launch Eshell in another window.
 (global-set-key (kbd "C-x !") 'eshell)
 
-(global-set-key (kbd "M-e") (lambda (n) (interactive "p") (scroll-up n)))
-(global-set-key (kbd "M-y") (lambda (n) (interactive "p") (scroll-down n)))
+(global-set-key (kbd "M-e") (lambda (n)
+			      "Scroll up N lines."
+			      (interactive "p") (scroll-up n)))
+(global-set-key (kbd "M-y") (lambda (n)
+			      "Scroll down N lines."
+			      (interactive "p") (scroll-down n)))
 
 ;; Alternatives for M-e / M-y.
 (global-set-key (kbd "C-x }") 'forward-sentence)
@@ -154,8 +160,12 @@
 (global-set-key (kbd "C-x <") 'shrink-window-horizontally)
 
 ;; Scroll by the half of window height.
-(global-set-key (kbd "C-v") (lambda (n) (interactive "p") (scroll-up (* n (max 1 (/ (window-body-height) 2))))))
-(global-set-key (kbd "M-v") (lambda (n) (interactive "p") (scroll-down (* n (max 1 (/ (window-body-height) 2))))))
+(global-set-key (kbd "C-v") (lambda (n)
+			      "Scroll up the half of window height."
+			      (interactive "p") (scroll-up (* n (max 1 (/ (window-body-height) 2))))))
+(global-set-key (kbd "M-v") (lambda (n)
+			      "Scroll down the half of window height."
+			      (interactive "p") (scroll-down (* n (max 1 (/ (window-body-height) 2))))))
 
 (global-set-key (kbd "M-l") 'move-to-window-line-top-bottom)
 
