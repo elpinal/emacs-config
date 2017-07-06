@@ -157,6 +157,8 @@
 (global-set-key (kbd "C-v") (lambda (n) (interactive "p") (scroll-up (* n (max 1 (/ (window-body-height) 2))))))
 (global-set-key (kbd "M-v") (lambda (n) (interactive "p") (scroll-down (* n (max 1 (/ (window-body-height) 2))))))
 
+(global-set-key (kbd "M-l") 'move-to-window-line-top-bottom)
+
 
 
 
@@ -191,6 +193,7 @@
     shm
     smartparens
     sml-mode
+    undo-tree
     ))
 
 (dolist (package packages-to-install)
@@ -253,6 +256,12 @@
 (global-set-key (kbd "C-x M-m") 'compose-mail)
 
 (global-set-key (kbd "C-x m") 'magit-status)
+
+;;; Undo-Tree
+
+(global-undo-tree-mode)
+
+(define-key undo-tree-map (kbd "M-r") 'undo-tree-redo)
 
 
 
