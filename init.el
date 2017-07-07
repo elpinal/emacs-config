@@ -173,6 +173,11 @@
 (global-set-key (kbd "M-z") 'repeat)
 (global-set-key (kbd "C-x z") 'zap-to-char)
 
+;; Switch to alternative buffer.
+(global-set-key (kbd "C-^") (lambda ()
+			      "Switch to alternative buffer."
+			      (interactive) (switch-to-buffer nil)))
+
 
 
 
