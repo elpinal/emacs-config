@@ -66,6 +66,9 @@
 ;; Show column number.
 (column-number-mode t)
 
+;; Keep a newline at the end of the file.
+(setq require-final-newline t)
+
 
 
 
