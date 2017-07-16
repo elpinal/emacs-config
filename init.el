@@ -279,6 +279,9 @@
 
 (global-set-key (kbd "C-x m") 'magit-status)
 
+
+
+
 ;;; Undo-Tree
 
 (global-undo-tree-mode)
