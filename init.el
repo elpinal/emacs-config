@@ -282,6 +282,14 @@
 
 
 
+;;; Org
+(custom-set-variables '(org-directory "~/working/notes")
+		      '(org-default-notes-file (concat org-directory "/gtd.org")))
+(global-set-key (kbd "C-c c") 'org-capture)
+
+
+
+
 ;;; Undo-Tree
 
 (global-undo-tree-mode)
