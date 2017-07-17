@@ -284,7 +284,15 @@
 
 ;;; Org
 (custom-set-variables '(org-directory "~/working/notes")
-		      '(org-default-notes-file (concat org-directory "/gtd.org")))
+		      '(org-default-notes-file (concat org-directory "/gtd.org"))
+		      '(org-log-done t)
+		      '(org-refile-targets '((org-default-notes-file :level . 1)))
+		      '(org-capture-templates '(("i" "Inbox" entry
+						 (file+headline "" "Inbox")
+						 "* %?%i\n  %U\n  %a\n"))))
+(global-set-key (kbd "C-x /") (lambda ()
+				"Open GTD file"
+				(interactive) (find-file org-default-notes-file)))
 (global-set-key (kbd "C-c c") 'org-capture)
 
 
