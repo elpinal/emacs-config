@@ -283,6 +283,7 @@
 
 
 ;;; Org
+
 (custom-set-variables '(org-directory "~/working/notes")
 		      '(org-default-notes-file (concat org-directory "/gtd.org"))
 		      '(org-log-done t)
