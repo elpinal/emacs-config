@@ -294,7 +294,7 @@
 						 "* %?%i\n  %U\n  %a\n"))))
 (global-set-key (kbd "C-x /") (lambda ()
 				"Open GTD file"
-				(interactive) (find-file org-default-notes-file)))
+				(interactive) (find-file "~/working/notes/gtd.org")))
 (global-set-key (kbd "C-c c") 'org-capture)
 
 
