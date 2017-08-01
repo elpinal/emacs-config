@@ -205,6 +205,7 @@
     auto-complete
     cider
     clojure-mode
+    ddskk
     flycheck
     ghc
     go-autocomplete
@@ -229,6 +230,12 @@
 ;;; Auto-Complete
 
 (ac-config-default)
+
+
+
+
+;;; DDSKK
+(setq default-input-method "japanese-skk")
 
 
 
