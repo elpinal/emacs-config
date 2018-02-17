@@ -213,6 +213,7 @@
     go-mode
     haskell-mode
     hindent
+    kibit-helper
     magit
     markdown-mode
     shm
