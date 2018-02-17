@@ -197,6 +197,10 @@
 (add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/") t)
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
 
+;; Make "melpa-stable" take the highest priority.
+;; Note that the priorities of the others default to 0.
+(add-to-list 'package-archive-priorities '("melpa-stable" . 1))
+
 (package-initialize)
 ;;(package-refresh-contents)
 
