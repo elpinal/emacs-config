@@ -90,6 +90,17 @@
 
 
 
+;;; Minibuffer
+
+;;; Disable <up> and <down> since I want to use their global maps to
+;;; move around windows. The original actions are almost performed by
+;;; <M-p> / <M-n> / C-p / C-n.
+(define-key minibuffer-local-map (kbd "<up>") nil)
+(define-key minibuffer-local-map (kbd "<down>") nil)
+
+
+
+
 ;;; Editing
 
 ;; To reserve M-l / M-u / M-c for other use.
