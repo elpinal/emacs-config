@@ -129,9 +129,10 @@
 ;; Alternative for M-h.
 (global-set-key (kbd "C-x M-h") 'mark-paragraph)
 
-;; Alternative for C-a.
+;; Alternatives for C-a and C-M-a.
 ;; C-a is used for a prefix key of GNU Screen.
 (global-set-key (kbd "C-q") 'move-beginning-of-line)
+(global-set-key (kbd "C-M-q") 'beginning-of-defun)
 
 ;; Alternative for the original action of C-q.
 (global-set-key (kbd "C-x M-q") 'quoted-insert)
