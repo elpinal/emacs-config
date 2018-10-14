@@ -4,10 +4,10 @@ This git repository contains configuration files for Emacs which are written by 
 
 ## Install
 
-To install, use `omake`:
+To install, use `go`:
 
 ```bash
-$ omake
+$ go run main.go
 ```
 
 ## Assumption
