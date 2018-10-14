@@ -339,6 +339,14 @@
 
 
 ;;;; Filetypes
+;;; Agda
+
+(load-file (let ((coding-system-for-read 'utf-8))
+	     (shell-command-to-string "agda-mode locate")))
+
+
+
+
 ;;; Clojure
 
 (require 'smartparens-config)
@@ -405,6 +413,14 @@
 
 (load-theme 'monotone t)
 (enable-theme 'monotone)
+
+
+
+;;; Twelf
+
+(setq twelf-root "~/Downloads/twelf.plparty.org/builds/twelf/")
+(load (concat twelf-root "emacs/twelf-init.el"))
+
 
 
 
