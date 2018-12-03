@@ -223,6 +223,7 @@
     cider
     clojure-mode
     ddskk
+    docker-tramp
     flycheck
     ghc
     go-autocomplete
