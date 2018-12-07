@@ -237,6 +237,7 @@
     smartparens
     sml-mode
     undo-tree
+    yaml-mode
     ))
 
 (dolist (package packages-to-install)
