@@ -202,19 +202,25 @@
 
 
 ;;;; Packages
+;;; Settings
+
+(defvar bootstrap-version)
+(let ((bootstrap-file
+       (expand-file-name "straight/repos/straight.el/bootstrap.el" user-emacs-directory))
+      (bootstrap-version 5))
+  (unless (file-exists-p bootstrap-file)
+    (with-current-buffer
+	(url-retrieve-synchronously
+	 "https://raw.githubusercontent.com/raxod502/straight.el/develop/install.el"
+	 'silent 'inhibit-cookies)
+      (goto-char (point-max))
+      (eval-print-last-sexp)))
+  (load bootstrap-file nil 'nomessage))
+
+
+
+
 ;;; Package installation
-
-(require 'package)
-
-(add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/") t)
-(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
-
-;; Make "melpa-stable" take the highest priority.
-;; Note that the priorities of the others default to 0.
-(add-to-list 'package-archive-priorities '("melpa-stable" . 1))
-
-(package-initialize)
-;;(package-refresh-contents)
 
 (defconst packages-to-install
   '(
@@ -241,8 +247,7 @@
     ))
 
 (dolist (package packages-to-install)
-  (unless (package-installed-p package)
-    (package-install package)))
+  (straight-use-package package))
 
 
 
