@@ -372,11 +372,8 @@
 (require 'haskell-process)
 
 (add-to-list 'load-path "~/.stack/snapshots/x86_64-osx/lts-4.0/7.10.3/share/x86_64-osx-ghc-7.10.3/HaRe-0.8.2.1/elisp")
-(require 'hare)
-(autoload 'hare-init "hare" nil t)
 
 (add-hook 'haskell-mode-hook 'interactive-haskell-mode)
-(add-hook 'haskell-mode-hook (lambda () (ghc-init) (hare-init)))
 (add-hook 'haskell-mode-hook #'hindent-mode)
 (add-hook 'haskell-mode-hook 'haskell-decl-scan-mode)
 
