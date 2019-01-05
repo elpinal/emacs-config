@@ -260,6 +260,7 @@
 
 
 ;;; DDSKK
+
 (setq default-input-method "japanese-skk")
 
 
