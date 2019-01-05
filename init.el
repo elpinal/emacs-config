@@ -242,6 +242,7 @@
     shm
     smartparens
     sml-mode
+    twittering-mode
     undo-tree
     yaml-mode
     ))
@@ -329,6 +330,17 @@
 				"Open GTD file"
 				(interactive) (find-file "~/working/notes/gtd.org")))
 (global-set-key (kbd "C-c c") 'org-capture)
+
+
+
+
+;;; Twittering
+
+(setq twittering-use-master-password t)
+(setq epa-pinentry-mode 'loopback)
+(setq twittering-display-remaining t)
+(setq twittering-status-format
+      "%RT{%FACE[bold]{RT}}%i %S (@%s),  %@:\n%FOLD[  ]{%T // from %f%L%r%R%QT{\n+----\n%FOLD[|]{%i %s,  %@:\n%FOLD[  ]{%T // from %f%L%r%R}}\n+----}}\n ")
 
 
 
