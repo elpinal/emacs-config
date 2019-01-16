@@ -314,6 +314,9 @@
 
 (global-set-key (kbd "C-x m") 'magit-status)
 
+;; "C-x g" is used globally for other purposes.
+(define-key magit-file-mode-map (kbd "C-x g") nil)
+
 
 
 
