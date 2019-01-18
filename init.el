@@ -309,6 +309,8 @@
 
 ;;; Magit
 
+(require 'magit)
+
 ;; Alternative for the original action of "C-x m".
 (global-set-key (kbd "C-x M-m") 'compose-mail)
 
