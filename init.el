@@ -429,6 +429,16 @@
 
 
 
+;;; SATySFi
+
+(require 'satysfi)
+(add-to-list 'auto-mode-alist '("\\.saty$" . satysfi-mode))
+(add-to-list 'auto-mode-alist '("\\.satyh$" . satysfi-mode))
+(add-to-list 'auto-mode-alist '("\\.satyg$" . satysfi-mode))
+
+
+
+
 ;;; Twelf
 
 (setq twelf-root "~/Downloads/twelf.plparty.org/builds/twelf/")
