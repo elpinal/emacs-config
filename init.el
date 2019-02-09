@@ -239,6 +239,8 @@
     kibit-helper
     magit
     markdown-mode
+    (satysfi :type git :host github :repo "gfngfn/satysfi.el"
+	     :fork (:host github :repo "elpinal/satysfi.el" :branch "no-background"))
     shm
     smartparens
     sml-mode
