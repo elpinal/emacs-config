@@ -427,6 +427,14 @@
 
 
 
+;;; Twelf
+
+(setq twelf-root "~/Downloads/twelf.plparty.org/builds/twelf/")
+(load (concat twelf-root "emacs/twelf-init.el"))
+
+
+
+
 
 
 
@@ -435,14 +443,6 @@
 
 (load-theme 'monotone t)
 (enable-theme 'monotone)
-
-
-
-;;; Twelf
-
-(setq twelf-root "~/Downloads/twelf.plparty.org/builds/twelf/")
-(load (concat twelf-root "emacs/twelf-init.el"))
-
 
 
 
