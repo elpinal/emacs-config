@@ -231,6 +231,7 @@
     ddskk
     docker-tramp
     flycheck
+    fsharp-mode
     ghc
     go-autocomplete
     go-mode
