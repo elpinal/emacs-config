@@ -440,6 +440,14 @@
 
 
 
+;;; Stletiori
+
+(add-to-list 'auto-mode-alist '("\\.stl$" . clojure-mode))
+(add-hook 'clojure-mode-hook #'smartparens-strict-mode)
+
+
+
+
 ;;; Twelf
 
 (setq twelf-root "~/Downloads/twelf.plparty.org/builds/twelf/")
