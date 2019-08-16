@@ -194,6 +194,8 @@
 			      "Switch to alternative buffer."
 			      (interactive) (switch-to-buffer nil)))
 
+(global-set-key (kbd "M-g C-l") 'linum-mode)
+
 
 
 
