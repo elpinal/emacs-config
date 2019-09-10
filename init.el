@@ -230,6 +230,7 @@
     auto-complete
     cider
     clojure-mode
+    company-coq
     ddskk
     docker-tramp
     flycheck
@@ -382,6 +383,13 @@
 
 (require 'smartparens-config)
 (add-hook 'clojure-mode-hook #'smartparens-strict-mode)
+
+
+
+
+;;; Coq
+
+(add-hook 'coq-mode-hook #'company-coq-mode)
 
 
 
