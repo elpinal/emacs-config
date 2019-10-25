@@ -238,6 +238,7 @@
     docker-tramp
     flycheck
     fsharp-mode
+    fstar-mode
     ghc
     go-autocomplete
     go-mode
