@@ -69,6 +69,9 @@
 ;; Keep a newline at the end of the file.
 (setq require-final-newline t)
 
+;; Don't use tabs.
+(custom-set-variables '(indent-tabs-mode nil))
+
 
 
 
