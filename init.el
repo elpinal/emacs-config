@@ -465,7 +465,7 @@
 
 ;;; Twelf
 
-(setq twelf-root "~/Downloads/twelf.plparty.org/builds/twelf/")
+(setq twelf-root "~/Downloads/twelf.org/releases/twelf/")
 (load (concat twelf-root "emacs/twelf-init.el"))
 
 
