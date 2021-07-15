@@ -347,6 +347,9 @@
 				(interactive) (find-file "~/working/notes/gtd.org")))
 (global-set-key (kbd "C-c c") 'org-capture)
 
+(with-eval-after-load 'org
+  (define-key org-mode-map (kbd "M-h") nil))
+
 
 
 
